@@ -19,7 +19,9 @@ Download the source code and install the following modules:
 - Bootstrap 
 - React-Bootstrap
 
-##### npm install font-awesome - for search icon
+##### `npm install font-awesome` 
+
+- for search icon
 
 ##### Routing modules
 
