@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## Crypto Currency Listing Table using React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Download the source code and install the following modules:
 
-## Available Scripts
+### MongoDB
 
-In the project directory, you can run:
+ `npm install mongodb`  &  `npm install mongoose`
 
-### `npm start`
+- for database connection
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### npm install axios
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- to fetch the data from a public API
 
-### `npm test`
+- public API for retrieving crypto currency data. [https://p.nomics.com/cryptocurrency-bitcoin-api]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### UI Frameworks used
 
-### `npm run build`
+- Bootstrap 
+- React-Bootstrap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### npm install font-awesome - for search icon
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Routing modules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- npm install react-router-dom
+- npm install react-router
 
-### `npm run eject`
+#### `npm start` 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-  to run the react application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `node connection.js` 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- to start the node server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Crypto Currency Application
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+http://localhost:3000/home - displays Crypto Currency listing data
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Data table with search and pagination functionalities
+- Save button to store the record into mongodb
+- View button to navigate to /view (Saved table)
 
-### Code Splitting
+http://localhost:3000/view - displays data that has been saved to mongodb database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Saved Table with delete button to delete saved data from local database
+- Back button to navigate to /home (Crypto currency table)
 
-### Analyzing the Bundle Size
+#### `Both pages have Draggable Hero Cards on the top of the table`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

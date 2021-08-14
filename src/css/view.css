@@ -1,0 +1,30 @@
+.view-header{
+    height: 61px;
+
+}
+
+.view-table{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #25213B;
+}
+
+.no-data{
+        font-weight: 500!important;
+        font-size: 18px!important;
+        line-height: 22px!important;
+        color: #25213B;
+}
+
+.back-btn{
+    text-align: center;
+    align-items: center;
+    justify-content: center!important;
+    display: flex;
+}

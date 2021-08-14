@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,Redirect
+} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import HeroCards from "./components/herocards.js";
+import logo from '../src/Assets/QuikieAppsLogo.png'
+import SavedData from "./components/savedData.js";
+import CryptoData from "./components/cryptodata.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="main">
+        <div className="head-class">
+            <img src={logo} alt=''/>
+        </div>
+        <HeroCards/>
+
+        <Switch>
+
+          <Route exact path="/">
+            <Redirect to="/home" /> 
+          </Route>
+          
+          <Route path="/home">
+            <CryptoData />
+          </Route>
+
+          <Route path="/view">
+            <SavedData />
+          </Route>
+
+        </Switch>
+      </div>
+      
+    </Router>
   );
 }
 
